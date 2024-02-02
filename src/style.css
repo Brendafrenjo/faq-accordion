@@ -1,22 +1,37 @@
 body {
+  font-family: "Lato", sans-serif;
   background-color: #141414;
   color: white;
 }
 
-h2 {
-  color: #c5f82a;
+h1 {
+  color: #f96d00;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 60px;
+  cursor: pointer;
 }
 
-h2:hover {
+h2 {
   color: #ffff;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p {
+  padding-top: 16px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 .container {
   display: block;
   margin: 0 auto;
   padding: 40px;
-  margin-top: 100px;
+  margin-top: 30px;
   border-radius: 10px;
   max-width: 700px;
   background-color: #1f1f1f;
@@ -28,14 +43,20 @@ h2:hover {
   padding-bottom: 16px;
 }
 
+.accordion-question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .minus-icon {
   background-color: #ffff;
-  color: black;
+  display: none;
 }
 
 .plus-icon {
-  background-color: #c5f82a;
-  color: #ffff;
+  background-color: #f96d00;
 }
 
 .plus-icon,
@@ -45,4 +66,27 @@ h2:hover {
   padding: 8px;
   position: relative;
   bottom: 4px;
+  color: #141414;
+}
+
+.accordion-answer {
+  height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.faq.active .answer {
+  height: auto;
+}
+
+.faq.active h2 {
+  color: #f96d00;
+}
+
+.faq.active .minus-icon {
+  display: inline-block;
+}
+
+.faq.active .plus-icon {
+  display: block;
 }
