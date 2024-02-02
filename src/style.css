@@ -37,6 +37,12 @@ p {
   background-color: #1f1f1f;
 }
 
+.faq-icon {
+  font-size: 44px;
+  position: relative;
+  top: -6px;
+}
+
 .faq {
   border-bottom: 2px solid #ffff;
   margin-top: 32px;
@@ -69,13 +75,13 @@ p {
   color: #141414;
 }
 
-.accordion-answer {
+.faq .accordion-answer {
   height: 0;
   overflow: hidden;
   transition: max-height 1.4s ease;
 }
 
-.faq.active .answer {
+.faq.active .accordion-answer {
   height: auto;
 }
 
@@ -88,5 +94,5 @@ p {
 }
 
 .faq.active .plus-icon {
-  display: block;
+  display: none;
 }
