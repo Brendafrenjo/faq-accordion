@@ -1,0 +1,48 @@
+body {
+  background-color: #141414;
+  color: white;
+}
+
+h2 {
+  color: #c5f82a;
+}
+
+h2:hover {
+  color: #ffff;
+  cursor: pointer;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 100px;
+  border-radius: 10px;
+  max-width: 700px;
+  background-color: #1f1f1f;
+}
+
+.faq {
+  border-bottom: 2px solid #ffff;
+  margin-top: 32px;
+  padding-bottom: 16px;
+}
+
+.minus-icon {
+  background-color: #ffff;
+  color: black;
+}
+
+.plus-icon {
+  background-color: #c5f82a;
+  color: #ffff;
+}
+
+.plus-icon,
+.minus-icon {
+  font-size: 12px;
+  border-radius: 60%;
+  padding: 8px;
+  position: relative;
+  bottom: 4px;
+}
