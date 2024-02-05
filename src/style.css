@@ -85,14 +85,14 @@ p {
   height: auto;
 }
 
-.faq.active h2 {
-  color: #f96d00;
+.faq.active .plus-icon {
+  display: none;
 }
 
 .faq.active .minus-icon {
   display: inline-block;
 }
 
-.faq.active .plus-icon {
-  display: none;
+.faq.active h2 {
+  color: #f96d00;
 }
